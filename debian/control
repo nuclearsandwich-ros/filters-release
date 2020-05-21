@@ -1,0 +1,13 @@
+Source: ros-testing-filters
+Section: misc
+Priority: optional
+Maintainer: Tully Foote <tfoote@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-dev, ros-testing-ament-cmake, ros-testing-ament-cmake-cppcheck, ros-testing-ament-cmake-cpplint, ros-testing-ament-cmake-gtest, ros-testing-ament-cmake-uncrustify, ros-testing-ament-cmake-xmllint, ros-testing-pluginlib, ros-testing-rclcpp, ros-testing-ros-workspace
+Homepage: https://wiki.ros.org/filters
+Standards-Version: 3.9.2
+
+Package: ros-testing-filters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-dev, ros-testing-pluginlib, ros-testing-rclcpp, ros-testing-ros-workspace
+Description: This library provides a standardized interface for processing data as a sequence of filters.
+ This package contains a base class upon which to build specific implementations as well as an interface which dynamically loads filters based on runtime parameters.
